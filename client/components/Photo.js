@@ -9,7 +9,7 @@ const Photo = React.createClass({
       <figure className="grid-figure">
         <div className="grid-photo-wrap">
           <Link to={`/view/${post.code}`}>
-            <img src={post.display_src} alt={post.caption} className="grid-photo" />
+           <img src={post.display_src} alt={post.caption} className="grid-photo" />
           </Link>
 
           <CSSTransitionGroup transitionName="like" transitionEnterTimeout={500} transitionLeaveTimeout={500}>

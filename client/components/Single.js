@@ -4,17 +4,9 @@ import Photo from './Photo';
 
 const Single = React.createClass({
   render() {
-    const { postId } = this.props.params;
-
-    const i = this.props.posts.findIndex((post) => post.code === postId);
-    const post = this.props.posts[i];
-    console.log(i);
-
-    // const postComments = this.props.comments[postId] || [];
 
     return (
       <div className="single-photo">
-        <Photo i={i} post={post} {...this.props} />
         
       </div>
     )
@@ -24,3 +16,22 @@ const Single = React.createClass({
 export default Single;
 // <Comments postComments={postComments} />
 // this code was on line 17
+
+// const Single = React.createClass({
+  // render() {
+//     const { postId } = this.props.params;
+
+//     const i = this.props.posts.findIndex((post) => post.code === postId);
+//     const post = this.props.posts[i];
+//     console.log(i);
+
+//     // const postComments = this.props.comments[postId] || [];
+
+//     return (
+//       <div className="single-photo">
+//         <Photo i={i} post={post} {...this.props} />
+        
+//       </div>
+//     )
+//   }
+// });
