@@ -5,28 +5,35 @@ import { render } from 'react-dom';
 // Import css
 import css from './styles/style.styl';
 
-// Import Components
-import App from './components/App';
-import Single from './components/Single';
-import PhotoGrid from './components/PhotoGrid';
 
-// import react router deps
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-import { Provider } from 'react-redux';
-import store, { history } from './store';
+// // Import Components
+import Main from './components/Main';
 
-const router = (
-  <Provider store={store}>
-    <Router history={history}>
-      <Route path="/" component={App}>
-        <IndexRoute component={PhotoGrid}></IndexRoute>
-        <Route path="/view/:postId" component={Single}></Route>
-      </Route>
-    </Router>
-  </Provider>
-)
+render(<Main/>, document.getElementById('root'));
 
-render(router, document.getElementById('root'));
+// // Import Components
+
+// import App from './components/App';
+// import Single from './components/Single';
+// import PhotoGrid from './components/PhotoGrid';
+
+// // import react router deps
+// import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+// import { Provider } from 'react-redux';
+// import store, { history } from './store';
+
+// const router = (
+//   <Provider store={store}>
+//     <Router history={history}>
+//       <Route path="/" component={App}>
+//         <IndexRoute component={PhotoGrid}></IndexRoute>
+//         <Route path="/view/:postId" component={Single}></Route>
+//       </Route>
+//     </Router>
+//   </Provider>
+// )
+
+// render(router, document.getElementById('root'));
 
 
 // import Raven from 'raven.js';

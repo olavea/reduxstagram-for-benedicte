@@ -8,14 +8,14 @@ const Main = React.createClass({
         <h1>
           <Link to="/">OlaVeagram</Link>
         </h1>
-        {React.cloneElement(this.props.children, this.props)}
+        
       </div>
     )
   }
 });
 
 export default Main;
-
+//{React.cloneElement(this.props.children, this.props)}
 
 // Video 2 : koden over
 // Video X : koden under
